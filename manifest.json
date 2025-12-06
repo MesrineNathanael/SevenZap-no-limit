@@ -1,14 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "7Zap VCC Cleaner",
+  "name": "7Zap no limit",
   "version": "1.0",
-  "description": "Automatically removes the '7zap_vcc' cookie on pages under https://7zap.com/.",
+  "description": "Automatically removes the '7zap_*' cookie on pages under https://*.7zap.com/.",
   "permissions": [
     "cookies",
     "webNavigation"
   ],
   "host_permissions": [
-    "https://7zap.com/*"
+    "https://7zap.com/*",
+    "https://*.7zap.com/*",
+    "http://7zap.com/*",
+    "http://*.7zap.com/*"
   ],
   "background": {
     "service_worker": "background.js"
