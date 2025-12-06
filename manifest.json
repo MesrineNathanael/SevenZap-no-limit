@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "7Zap VCC Cleaner",
+  "version": "1.0",
+  "description": "Automatically removes the '7zap_vcc' cookie on pages under https://7zap.com/.",
+  "permissions": [
+    "cookies",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://7zap.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.svg",
+      "48": "icons/icon48.svg",
+      "128": "icons/icon128.svg"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  }
+}
